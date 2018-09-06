@@ -12,7 +12,7 @@ export default ({ users, destroyUser, userMap })=> {
             <Link to={`/users/${user.id}`}>{ user.name }</Link>
             {
               manager ? (
-                <span>Manage by { manager.name }</span>
+                <span> managed by { manager.name }</span>
               ): (null)
             }
             <button onClick={ ()=> destroyUser(user)}>x</button>
